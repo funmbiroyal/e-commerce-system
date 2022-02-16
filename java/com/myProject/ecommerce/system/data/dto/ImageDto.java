@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Bean;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
-@Entity
+
 @Data
 public class ImageDto {
     @Id

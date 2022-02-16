@@ -1,19 +1,23 @@
 package com.myProject.ecommerce.system.data.dto;
 
 import com.myProject.ecommerce.system.data.model.Product;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 
-
-@Entity
 @Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class ProductDto {
     @Id
-    private String id;
+    private Long id;
     @OneToOne
     private Product product;
     private String name;
